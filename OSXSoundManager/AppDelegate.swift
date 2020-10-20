@@ -13,7 +13,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var popover: NSPopover!
     var statusBarItem: NSStatusItem!
 
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
         let contentView:ContentView = ContentView();
@@ -32,6 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.image = NSImage(named: "Icon");
             button.action = #selector(togglePopover(_:));
         }
+        self.getRunningApps();
     }
     
     @objc func togglePopover(_ sender: AnyObject?) {
@@ -44,6 +44,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             self.popover.contentViewController?.view.window?.becomeKey()
          }
     }
+    /**
+            Get Running applications that are in the foreground
+     */
+    func getRunningApps() -> Void {
+        let runningApplications = NSWorkspace.shared.runningApplications;
+        for runningApp in runningApplications{
+            if(runningApp.activationPolicy == .regular){
+                print(runningApp.localizedName!)
+            }
+        }
+    }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
@@ -51,4 +62,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 }
-
