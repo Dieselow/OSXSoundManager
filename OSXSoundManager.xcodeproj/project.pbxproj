@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F5FF382253F3FB4000519AA /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5FF381253F3FB4000519AA /* ApplicationManager.swift */; };
+		3F5FF38B253F3FE4000519AA /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5FF38A253F3FE4000519AA /* ApplicationView.swift */; };
 		3F8BF06A253F188C004B6856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BF069253F188C004B6856 /* AppDelegate.swift */; };
 		3F8BF06C253F188C004B6856 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BF06B253F188C004B6856 /* ContentView.swift */; };
 		3F8BF06E253F188D004B6856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BF06D253F188D004B6856 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F5FF381253F3FB4000519AA /* ApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
+		3F5FF38A253F3FE4000519AA /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
 		3F8BF066253F188C004B6856 /* OSXSoundManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSXSoundManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8BF069253F188C004B6856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F8BF06B253F188C004B6856 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F5FF380253F3F99000519AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F5FF381253F3FB4000519AA /* ApplicationManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3F5FF389253F3FD5000519AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F5FF38A253F3FE4000519AA /* ApplicationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3F8BF05D253F188C004B6856 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +118,8 @@
 		3F8BF068253F188C004B6856 /* OSXSoundManager */ = {
 			isa = PBXGroup;
 			children = (
+				3F5FF389253F3FD5000519AA /* Views */,
+				3F5FF380253F3F99000519AA /* Models */,
 				3F8BF069253F188C004B6856 /* AppDelegate.swift */,
 				3F8BF06B253F188C004B6856 /* ContentView.swift */,
 				3F8BF06D253F188D004B6856 /* Assets.xcassets */,
@@ -266,7 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F8BF06C253F188C004B6856 /* ContentView.swift in Sources */,
+				3F5FF382253F3FB4000519AA /* ApplicationManager.swift in Sources */,
 				3F8BF06A253F188C004B6856 /* AppDelegate.swift in Sources */,
+				3F5FF38B253F3FE4000519AA /* ApplicationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
