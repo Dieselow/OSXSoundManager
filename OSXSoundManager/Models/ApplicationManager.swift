@@ -21,4 +21,8 @@ class ApplicationManager {
     func getAllRunningApplications() -> [NSRunningApplication] {
         return self.apps;
     }
+    /**
+    func getMasterVolume() {
+        
+    }**/
 }

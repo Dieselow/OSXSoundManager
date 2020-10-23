@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ApplicationView: View {
-    var application: NSRunningApplication;
+    var application: NSRunningApplication;  
     @State var currentValue = 4.0;
     var body: some View {
         return HStack {

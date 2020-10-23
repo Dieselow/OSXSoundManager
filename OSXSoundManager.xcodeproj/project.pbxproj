@@ -16,6 +16,7 @@
 		3F8BF074253F188D004B6856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BF072253F188D004B6856 /* Main.storyboard */; };
 		3F8BF080253F188D004B6856 /* OSXSoundManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BF07F253F188D004B6856 /* OSXSoundManagerTests.swift */; };
 		3F8BF08B253F188D004B6856 /* OSXSoundManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BF08A253F188D004B6856 /* OSXSoundManagerUITests.swift */; };
+		3F975F952543091A0005AEFA /* AudioSystemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F975F942543091A0005AEFA /* AudioSystemProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		3F8BF086253F188D004B6856 /* OSXSoundManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSXSoundManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8BF08A253F188D004B6856 /* OSXSoundManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSXSoundManagerUITests.swift; sourceTree = "<group>"; };
 		3F8BF08C253F188D004B6856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F975F942543091A0005AEFA /* AudioSystemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSystemProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		3F8BF068253F188C004B6856 /* OSXSoundManager */ = {
 			isa = PBXGroup;
 			children = (
+				3F975F932543090B0005AEFA /* Providers */,
 				3F5FF389253F3FD5000519AA /* Views */,
 				3F5FF380253F3F99000519AA /* Models */,
 				3F8BF069253F188C004B6856 /* AppDelegate.swift */,
@@ -155,6 +158,14 @@
 				3F8BF08C253F188D004B6856 /* Info.plist */,
 			);
 			path = OSXSoundManagerUITests;
+			sourceTree = "<group>";
+		};
+		3F975F932543090B0005AEFA /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				3F975F942543091A0005AEFA /* AudioSystemProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 			files = (
 				3F8BF06C253F188C004B6856 /* ContentView.swift in Sources */,
 				3F5FF382253F3FB4000519AA /* ApplicationManager.swift in Sources */,
+				3F975F952543091A0005AEFA /* AudioSystemProvider.swift in Sources */,
 				3F8BF06A253F188C004B6856 /* AppDelegate.swift in Sources */,
 				3F5FF38B253F3FE4000519AA /* ApplicationView.swift in Sources */,
 			);
